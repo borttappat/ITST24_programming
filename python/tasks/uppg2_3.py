@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 '''
 ● Lägg till filmen "Memento" till slutet av listan.
 ● Byt ut filmen "The Matrix" mot "The Lord of the Rings".
