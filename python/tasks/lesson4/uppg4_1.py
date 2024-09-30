@@ -11,3 +11,30 @@ vilket maxvärde.
 siffror. Använd funktionen isdigit()
 ● Skriv ut tabellen
 '''
+#input av siffra
+while True:
+    multiplier = input("Enter number to multiply: ")
+    if multiplier.isdigit():
+        multiplier = int(multiplier)
+        break
+    else:
+        print("Error, enter a number")
+
+#hur långt ska talet multipliceras
+while True:
+    multiplicand = input("Enter number to multiply with: ")
+    if multiplicand.isdigit():
+        multiplicand = int(multiplicand)
+        break
+    else:
+        print("Error, enter a number")
+
+
+#skapa en tabell med varje steg
+result_list = [ multiplier * i for i in range(1, multiplicand + 1)]
+
+#skriv ut tabellen
+print("\n")
+print("Here is your math table")
+print(result_list)
+
