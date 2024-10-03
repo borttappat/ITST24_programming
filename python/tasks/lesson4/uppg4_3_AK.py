@@ -65,7 +65,7 @@ def save_list():
     
     except FileExistsError:
         print(f"Error: {filename} already exists")
-        save_list()
+        save_list() #call the function again 
 
 def load_list():
     global shopping_list
