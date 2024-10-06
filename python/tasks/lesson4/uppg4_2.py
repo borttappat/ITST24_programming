@@ -120,8 +120,7 @@ while True:
       result = add(intinnumbers)
       print(result)
 
-      while not input("Press enter to continue... ") == '\n':
-        break
+      input("Press enter to continue... ")
 
     case '11':
       try:
@@ -135,9 +134,10 @@ while True:
 
       except ValueError as e:
         print("Invalid input. Error: ", e)
-        while not input("Press enter to continue... ") == '\n':
-          break
+        input("Press enter to continue... ")
         continue
+        
+      input("Press enter to continue... ")
 
     case '2':
         try:
@@ -155,12 +155,10 @@ while True:
 
         except ValueError as e:
           print("Invalid input. Error: " + str(e))
-          while not input("Press enter to continue... ") == '\n':
-            break
+          input("Press enter to continue... ")
           continue
 
-        while not input("Press enter to continue... ") == '\n':
-          break
+        input("Press enter to continue... ")
 
     case '3':
       try:
@@ -178,12 +176,10 @@ while True:
 
       except ValueError as e:
         print("Invalid input. Error: " + str(e))
-        while not input("Press enter to continue... ") == '\n':
-          break
+        input("Press enter to continue... ")
         continue
 
-      while not input("Press enter to continue... ") == '\n':
-        break
+      input("Press enter to continue... ")
 
     case '4':
       while True:
@@ -193,8 +189,7 @@ while True:
 
         print("Invalid input. Please input a number")
       divide(innumber)
-      while not input("Press enter to continue... ") == '\n':
-        break
+      input("Press enter to continue... ")
 
     case '5':
       while True:
@@ -208,8 +203,7 @@ while True:
 
       print("Result: ", mymodulus(int(innumber1), int(innumber2)))
 
-      while not input("Press enter to continue... ") == '\n':
-        break
+      input("Press enter to continue... ")
 
     case '6':
       while True:
@@ -221,8 +215,7 @@ while True:
 
       print("Result: ", mysquared(int(innumber)))
 
-      while not input("Press enter to continue... ") == '\n':
-        break
+      input("Press enter to continue... ")
 
     case '7':
       while True:
@@ -232,8 +225,7 @@ while True:
 
         print("Invalid input. Please input a number")
       print("Result: ", mycubed(int(innumber)))
-      while not input("Press enter to continue... ") == '\n':
-        break
+      input("Press enter to continue... ")
 
     case '8':
       exit()
